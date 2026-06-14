@@ -16,7 +16,7 @@ app = FastAPI(title="Lady MaYa's Groceries API", version="1.0.0", lifespan=lifes
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # add Vercel URL later
+    allow_origins=["*"],  # add Vercel URL later
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

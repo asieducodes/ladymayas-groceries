@@ -1,3 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reusable input style used in AdminPanel */
+.input {
+  width: 100%;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  border-radius: 0.75rem; /* rounded-xl */
+  padding: 0.625rem 1rem; /* py-2.5 px-4 */
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.25rem;
+  outline: none;
+}
+.input:focus {
+  border-color: #10b981; /* green-500 */
+  box-shadow: none;
+}
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -24,8 +42,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (max-width: 1024px) {
+/* Responsive root font-size must be a top-level rule (cannot nest @media inside :root) */
+@media (max-width: 1024px) {
+  :root {
     font-size: 16px;
   }
 }

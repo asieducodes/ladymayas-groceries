@@ -83,7 +83,7 @@ export default function AdminPanel({ onLogout }) {
         <div className="flex items-center gap-3">
           <span className="text-2xl">🛒</span>
           <div>
-            <h1 className="font-extrabold text-lg leading-none">Lady MaYa's</h1>
+            <h1 className="font-extrabold text-lg leading-none text-white opacity-80">Lady MaYa's</h1>
             <p className="text-xs opacity-70">Admin Dashboard</p>
           </div>
         </div>

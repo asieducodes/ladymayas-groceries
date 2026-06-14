@@ -47,6 +47,7 @@ export default function StoreFront({ onAdminClick }) {
           letter={letter}         setLetter={setLetter}
           purchaseType={purchaseType} setPurchaseType={setPurchaseType}
           isOpen={sidebarOpen}    onClose={() => setSidebarOpen(false)}
+          onAdminClick={onAdminClick}
         />
 
         <main className="flex-1 p-4 lg:p-6 min-w-0">

@@ -56,12 +56,13 @@ export default function Navbar({ search, onSearch, onMenuOpen, onAdminClick, tot
           </a>
         </div>
 
-        <button
-          onClick={onAdminClick}
-          className="hidden sm:block text-xs text-white/40 hover:text-white/80 ml-1 transition-colors"
-        >
-          Admin
-        </button>
+      
+<button
+  onClick={onAdminClick}
+  className="hidden sm:block text-xs text-white/40 hover:text-white/80 ml-1 transition-colors"
+>
+  Admin
+</button>
       </div>
 
       {/* Sub-bar */}

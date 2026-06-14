@@ -7,6 +7,7 @@ export default function Sidebar({
   letter,   setLetter,
   purchaseType, setPurchaseType,
   isOpen, onClose,
+  onAdminClick,
 }) {
   return (
     <>
@@ -80,6 +81,15 @@ export default function Sidebar({
               ))}
             </div>
           </Section>
+          {/* Spacer pushes Admin to bottom */}
+          <div className="flex-1" />
+          {/* Admin button — always visible at sidebar bottom */}
+          <button
+            onClick={() => { onAdminClick(); onClose(); }}
+            className="mt-6 w-full py-2.5 rounded-xl text-xs font-semibold border border-white/10 text-white/40 hover:text-white hover:border-white/30 transition-colors"
+          >
+            🔐 Admin Login
+          </button>
         </div>
       </aside>
     </>
